@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import RRPanel from './components/rrPanel';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RRPanel />
   </React.StrictMode>,
   document.getElementById('root')
 );
