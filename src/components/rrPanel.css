@@ -1,0 +1,312 @@
+/*
+**********************
+  for print function
+**********************
+*/
+
+/*
+************************
+  css normal defintion
+************************
+*/
+.head {
+  background: rgb(25, 25, 25) !important;
+  min-height: 11vh;
+  min-width: 100vw !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  justify-content: center;
+  display: grid;
+  /* border-bottom: 0.5px rgb(35, 35, 35) solid !important; */
+}
+
+.head_img {
+  height: 8vh;
+  width: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bg {
+  /* background: blue !important; */
+  background: rgb(25, 25, 25) !important;
+}
+/* .bdg::-webkit-scrollbar {
+  scrollbar-width: 0 !important;
+}
+.bdg::-webkit-scrollbar-track {
+  scrollbar-width: 0 !important;
+} */
+
+.left {
+}
+.right {
+  /* background: rgb(20, 20, 20) !important; */
+  background: rgb(35, 35, 35) !important;
+  /* position: relative !important; */
+  height: 100% !important;
+  top: 0;
+  margin-top: 0;
+  margin-right: 0;
+  border-top-left-radius: 23px !important;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.right::-webkit-scrollbar {
+  width: 5px;
+}
+
+.right::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.right::-webkit-scrollbar-track-piece {
+  background: transparent;
+  border-radius: 5px;
+}
+.right::-webkit-scrollbar-thumb {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 50px;
+}
+
+.vh90 {
+  height: 85vh !important;
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+  box-sizing: border-box;
+}
+/*  Below the css of vertical tabs  */
+/* -------------------------------- */
+.nav {
+  background: rgb(25, 25, 25) !important;
+  background: rgb(35, 35, 35) !important;
+  min-width: 3vw !important;
+  min-height: 85vh;
+  box-sizing: border-box;
+}
+.nav .nav-item {
+  overflow: hidden !important;
+}
+.nav.nav-tabs {
+  display: flex;
+  overflow: hidden !important;
+  list-style: none !important;
+  min-height: 85vh;
+  overflow: hidden !important;
+  overflow-y: auto !important;
+  min-width: 10% !important;
+  padding-right: 0px !important;
+  border-top-right-radius: 23px !important;
+}
+.nav-tabs .nav-link {
+  min-height: max-content !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background: rgb(25, 25, 25) !important;
+  background: transparent !important;
+}
+
+.nav-tabs .nav-link.active {
+  text-decoration-color: linear-gradient(120deg, #1e90ff, #7b68ee) !important;
+  border: 0px transparent !important;
+  /* border-right: 2px rgb(0, 176, 240) solid !important; */
+  color: rgb(0, 176, 240) !important;
+
+  background: rgb(35, 35, 35) !important;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+.nav-tabs .nav-link {
+  border: 0px solid yellow !important;
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
+  min-width: 1vh !important;
+}
+.tab-content > .active {
+  display: block;
+  background: transparent !important;
+  min-height: 85vh;
+  border: 0px red solid !important;
+  min-width: 2vw !important;
+}
+
+.tab-content {
+  width: 100% !important;
+  text-align: center !important;
+  top: 0;
+  margin-top: 0;
+}
+.nav.nav-tabs {
+  float: left;
+
+  display: block;
+  min-width: max-content;
+  margin-left: 10px;
+  border-bottom: 0;
+  border: 0px dashed white !important;
+  padding-right: 15px;
+}
+
+.tab-pane {
+  padding-left: 5px;
+  width: 100%;
+}
+/* form css animation */
+/* form elements */
+
+form {
+  text-align: center;
+  background: transparent !important;
+  min-width: 15vw !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: block;
+}
+
+select,
+textarea,
+input {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  color: white;
+  font-size: small;
+  background: transparent;
+}
+
+input[type="submit"] {
+  background-color: rgb(0, 176, 240) !important;
+  font-size: medium;
+  border: double 8px rgb(35, 35, 35) !important;
+  border-right: dotted 0px white !important;
+  border-left: dotted 0px white !important;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: rgb(55, 55, 55) !important;
+  border-right: dotted 0px white !important;
+  border-left: dotted 0px white !important;
+  cursor: pointer;
+}
+
+/* styles */
+
+.form-heading {
+  padding-top: 25px;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  color: white;
+  text-decoration: underline dotted rgb(105, 105, 105);
+  font-variant-caps: all-small-caps;
+}
+
+.form-heading-highlight {
+  color: #009688;
+}
+
+.form-row {
+  position: relative;
+  margin-top: 30px;
+}
+
+.form-label {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  color: #999 !important;
+  cursor: text;
+  transition: all 0.15s ease-in-out 0s;
+  background: transparent !important;
+}
+
+.form-textbox,
+.form-submit {
+  width: 100%;
+  padding: 10px;
+}
+
+.form-textbox {
+  border: 0px !important;
+}
+
+textarea:focus,
+input:focus {
+  border: 0px !important;
+}
+
+.form-textbox:focus ~ .form-label,
+.form-textbox:valid ~ .form-label {
+  top: -1.5em;
+  left: 0;
+  font-size: 0.8em;
+  border: 0px !important;
+  cursor: pointer;
+}
+
+.form-submit {
+  background-color: #009688;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.15s ease-in-out 0s;
+}
+
+.form-submit:hover {
+  opacity: 1.5;
+}
+
+/****************************** 
+Page A4 CSS logic here
+******************************/
+.toolbar {
+  min-height: 40px;
+  color: white;
+  position: sticky;
+  z-index: 5 !important;
+  padding-left: 20%;
+  padding-right: 20%;
+  background: rgb(35, 35, 35) !important;
+  top: 0 !important;
+  box-shadow: 0 0 30px rgba(35, 35, 35, 0.9);
+}
+.toolbar button {
+  background: transparent;
+  color: #0f93c7 !important;
+}
+page {
+  background: white;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+  width: 21cm !important; /* height and width of A4 */
+  height: 29.7cm !important;
+  border-radius: 7px;
+
+  margin-bottom: 0.5cm;
+  /* padding: 5px; */
+  box-shadow: 0 0 0.5cm rgba(250, 250, 250, 0.5);
+}
+
+/* Footer Css here */
+
+.footer {
+  background: rgb(25, 25, 25);
+}
