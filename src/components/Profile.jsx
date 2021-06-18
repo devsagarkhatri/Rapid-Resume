@@ -13,7 +13,7 @@ class Profile extends Component {
                     Basic Information
                 </h1>
                 <div className="form-row">
-                    <input type="text" id="form-name" className="form-textbox" required/>
+                    <input type="text" id="form-name" className="form-textbox" onChange={(event)=>this.props.setData(event.target.value)} required/>
                     <label htmlFor="form-name" className="form-label">Full Name</label>
                 </div>
                 <div className="form-row">

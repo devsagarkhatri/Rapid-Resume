@@ -2,7 +2,30 @@
 **********************
   for print function
 **********************
+
 */
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-track-piece {
+  background: transparent;
+  border-radius: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 50px;
+}
 
 /*
 ************************
@@ -30,6 +53,34 @@
 .bg {
   /* background: blue !important; */
   background: rgb(25, 25, 25) !important;
+  overflow-y: scroll !important;
+}
+
+.bg::-webkit-scrollbar {
+  width: 2px;
+}
+
+.bg::-webkit-scrollbar-track {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 10px;
+}
+.bg::-webkit-scrollbar-track-piece {
+  background: transparent;
+  border-radius: 5px;
+}
+.bg::-webkit-scrollbar-thumb {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 50px;
 }
 /* .bdg::-webkit-scrollbar {
   scrollbar-width: 0 !important;
@@ -51,6 +102,8 @@
   border-top-left-radius: 23px !important;
   overflow: hidden;
   overflow-y: auto;
+  float: right !important;
+  align-self: stretch !important;
 }
 
 .right::-webkit-scrollbar {
@@ -78,7 +131,7 @@
 .vh90 {
   height: 85vh !important;
   overflow-x: hidden;
-  overflow-y: hidden !important;
+  overflow-y: auto !important;
   box-sizing: border-box;
 }
 /*  Below the css of vertical tabs  */
@@ -161,6 +214,29 @@
   padding-left: 5px;
   width: 100%;
 }
+
+.nav-tabs::-webkit-scrollbar {
+  width: 2px;
+}
+
+.nav-tabs::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.nav-tabs::-webkit-scrollbar-track-piece {
+  background: transparent;
+  border-radius: 5px;
+}
+.nav-tabs::-webkit-scrollbar-thumb {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 50px;
+}
+
 /* form css animation */
 /* form elements */
 
@@ -289,7 +365,7 @@ Page A4 CSS logic here
   background: transparent;
   color: #0f93c7 !important;
 }
-page {
+.page {
   background: white;
   display: block;
   box-sizing: border-box;
