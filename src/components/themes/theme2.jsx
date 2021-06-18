@@ -4,20 +4,12 @@ import "./theme1.css";
 class Theme1 extends Component {
     constructor(props) {
         super(props);
-        this.state = {name:"DEFAULT NAME"  }
+        this.state = {  }
     }
-    
-    render() {
-        
-        if (this.props.name !== "" && this.props.name!==this.state.name) {
-            this.setState({name : this.props.name});    
-        }
-        
-        
-
+    render() { 
         return (
             <React.Fragment>
-                <h1 className="name">{this.state.name}</h1>
+                <h1 className="name">Sagar Khatri</h1>
                 <ul className="profile">
                     <li>dev.sagarkhatri@gmail.com</li>
                     <li>Phone Number</li>

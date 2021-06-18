@@ -13,24 +13,58 @@ class Work extends Component {
                 </h1>
                 <div className="form-row">
                     <input type="text" id="form-name" className="form-textbox" required/>
-                    <label htmlFor="form-name" className="form-label">Full Name</label>
+                    <label htmlFor="form-name" className="form-label">Comapny Name</label>
                 </div>
                 <div className="form-row">
                     <input type="text" id="form-email" className="form-textbox" required/>
-                    <label htmlFor="form-email" className="form-label">Email address</label>
+                    <label htmlFor="form-email" className="form-label">Job Role</label>
                 </div>
                 <div className="form-row">
                     <input type="phone" id="form-phone" className="form-textbox" required/>
-                    <label htmlFor="form-phone" className="form-label">Phone Number</label>
+                    <label htmlFor="form-phone" className="form-label">Year Started</label>
                 </div>
+                <div className="form-row">
+                    <input type="phone" id="form-phone1" className="form-textbox" required/>
+                    <label htmlFor="form-phone1" className="form-label">Year Ended</label>
+                </div>                
                 <div className="form-row">
                     <input type="location" id="form-location" className="form-textbox" required/>
                     <label htmlFor="form-location" className="form-label">Location</label>
                 </div>
                 <div className="form-row">
                     <input type="website" id="form-website" className="form-textbox" required/>
-                    <label htmlFor="form-website" className="form-label">Website Link</label>
+                    <label htmlFor="form-website" className="form-label">Your Job Role Contribution</label>
                 </div>                                                
+                <div className="form-row">
+                    <button id= "add">Add More</button>
+                </div> 
+                <div className="form-row">
+                    <input type="text" id="form-name" className="form-textbox" required/>
+                    <label htmlFor="form-name" className="form-label">Comapny Name</label>
+                </div>
+                <div className="form-row">
+                    <input type="text" id="form-email" className="form-textbox" required/>
+                    <label htmlFor="form-email" className="form-label">Job Role</label>
+                </div>
+                <div className="form-row">
+                    <input type="phone" id="form-phone" className="form-textbox" required/>
+                    <label htmlFor="form-phone" className="form-label">Year Started</label>
+                </div>
+                <div className="form-row">
+                    <input type="phone" id="form-phone1" className="form-textbox" required/>
+                    <label htmlFor="form-phone1" className="form-label">Year Ended</label>
+                </div>                
+                <div className="form-row">
+                    <input type="location" id="form-location" className="form-textbox" required/>
+                    <label htmlFor="form-location" className="form-label">Location</label>
+                </div>
+                <div className="form-row">
+                    <input type="website" id="form-website" className="form-textbox" required/>
+                    <label htmlFor="form-website" className="form-label">Your Job Role Contribution</label>
+                </div>                                                
+                <div className="form-row">
+                    <button id= "add">Add More</button>
+                </div> 
             </div>
          );
     }
