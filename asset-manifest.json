@@ -1,27 +1,9 @@
 {
-  "files": {
-    "main.css": "/rapidresume/static/css/main.738e8b2f.chunk.css",
-    "main.js": "/rapidresume/static/js/main.251605fc.chunk.js",
-    "main.js.map": "/rapidresume/static/js/main.251605fc.chunk.js.map",
-    "runtime-main.js": "/rapidresume/static/js/runtime-main.8be85167.js",
-    "runtime-main.js.map": "/rapidresume/static/js/runtime-main.8be85167.js.map",
-    "static/css/2.95f25948.chunk.css": "/rapidresume/static/css/2.95f25948.chunk.css",
-    "static/js/2.d8ba14b8.chunk.js": "/rapidresume/static/js/2.d8ba14b8.chunk.js",
-    "static/js/2.d8ba14b8.chunk.js.map": "/rapidresume/static/js/2.d8ba14b8.chunk.js.map",
-    "static/js/3.d00d7e13.chunk.js": "/rapidresume/static/js/3.d00d7e13.chunk.js",
-    "static/js/3.d00d7e13.chunk.js.map": "/rapidresume/static/js/3.d00d7e13.chunk.js.map",
-    "index.html": "/rapidresume/index.html",
-    "static/css/2.95f25948.chunk.css.map": "/rapidresume/static/css/2.95f25948.chunk.css.map",
-    "static/css/main.738e8b2f.chunk.css.map": "/rapidresume/static/css/main.738e8b2f.chunk.css.map",
-    "static/js/2.d8ba14b8.chunk.js.LICENSE.txt": "/rapidresume/static/js/2.d8ba14b8.chunk.js.LICENSE.txt",
-    "static/media/banner.f93d3f21.png": "/rapidresume/static/media/banner.f93d3f21.png",
-    "static/media/rrlogo.a68b51b4.png": "/rapidresume/static/media/rrlogo.a68b51b4.png"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.8be85167.js",
-    "static/css/2.95f25948.chunk.css",
-    "static/js/2.d8ba14b8.chunk.js",
-    "static/css/main.738e8b2f.chunk.css",
-    "static/js/main.251605fc.chunk.js"
-  ]
+  "main.css": "static/css/main.2494ade1.css",
+  "main.css.map": "static/css/main.2494ade1.css.map",
+  "main.js": "static/js/main.4c8e6cda.js",
+  "main.js.map": "static/js/main.4c8e6cda.js.map",
+  "static/media/banner.png": "static/media/banner.3e6f6b21.png",
+  "static/media/banner1.png": "static/media/banner1.ce99c717.png",
+  "static/media/rrlogo.png": "static/media/rrlogo.ba0db9f0.png"
 }
