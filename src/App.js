@@ -6,8 +6,14 @@ import './../node_modules/bootstrap/dist/css/bootstrap.css';
 // import logo from './../src/resources/images/rrlogo.png';
 import RRPanel1 from './components/rrPanel1';
 
+
+
 function App() {
-  return <RRPanel1/>;
+  return (
+    <React.Fragment>
+      <RRPanel1/>
+    </React.Fragment>
+  );
   // return (
   //   <div className="container-fluid">
   //     <div className="row" style={{color:"white",height:"95vh"}}>

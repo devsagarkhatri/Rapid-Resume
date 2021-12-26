@@ -6,13 +6,11 @@ class Education extends Component {
         super(props);
         this.state = { count:1 }
         this.addCount = this.addCount.bind(this);
-        this.removeCount=this.removeCount.bind(this);
-        
+        this.removeCount=this.removeCount.bind(this);        
     }
     
-    componentDidMount(){
-
-    }
+    componentDidMount() { }
+    
     addCount(){
         if(true){
         this.setState({count:this.state.count+1});
@@ -45,7 +43,7 @@ class Education extends Component {
                     </div> */}
                 </div>
                 <div className="form-row">
-                    <input type="text" id="form-name" className="form-textbox" required/>
+                        <input type="text" id="form-name" className="form-textbox" required/>
                     <label htmlFor="form-name" className="form-label">University Name</label>
                 </div>
                 <div className="form-row">
@@ -66,7 +64,8 @@ class Education extends Component {
                 </div>
                 
                 <div className="form-row">
-                    <button id= "add" onClick={()=> this.addCount()}> Add More </button>
+                        <button id="add" onClick={() => this.addCount()}> Add More </button>
+                        {i>0?<button id="remove" onClick={() => this.removeCount()}> Delete It </button>:""}
                 </div>
             </React.Fragment>
             )

@@ -14,20 +14,28 @@ import "./rrPanel.css";
 class RRPanel1 extends Component {
     state = { 
         progress: 100 / 6,
-        menu: 2,
-        name: "",
-        email: "",
-        mobile: "",
-        linkedin: "",
-        github: "",
-        desc: "",
+        menu: 1,
+        name: "YOUR NAME",
+        profile: {},
+        education:{},
         isTrue:true,
     }
 
-    setData = (name1) => {
-        console.log("under Development",name1);
+    setProfile = (profile) => {
+        console.log("under Development", profile);
+        this.setState({ profile });
     }
-
+    setEducation = (education) => {
+        console.log("Under Education", education);
+        this.setState({ education });
+    }
+    print = () => {
+        var printContents = document.getElementById('printableArea').innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;        
+    }
     render() { 
         return ( 
             <React.Fragment>
@@ -69,8 +77,8 @@ class RRPanel1 extends Component {
                             <form className="input_form" style={{display:'flex',flexGrow:"100", border:"white 0px solid"}}>
                                 <div className="tab-content" style={{float:'right',overflowX:"hidden",padding:"1px",minWidth:"20vw",maxHeight:"85vh", border:"red 0px solid"}}>   
                                     <Themes/>
-                                    <Profile setData={ this.setData }/>
-                                    <Education/>
+                                    <Profile setProfile={ this.setProfile }/>
+                                    <Education setEducation={ this.setEducation }/>
                                     <Work/>
                                     <Skills/>
                                     <Projects/>                                            
@@ -81,12 +89,12 @@ class RRPanel1 extends Component {
 
                     <div className="col-sm-8 col-lg-9 right">
                         <div className="row toolbar">
-                            <button >   Print    </button>
-                            <button>Download PDF</button> 
+                            <button onClick={this.print} >   Print    </button>
+                            <button onClick={this.print}>Download PDF</button> 
                         </div>
                         <PrismaZoom maxZoom={1.5} >
-                            <div size="A4" className="page printpage">
-                                <Theme1 name={ this.state.name }/>
+                            <div size="A4" id='printableArea' className="page printpage">
+                                <Theme1 profile={ this.state.profile }/>
                             </div>
                         </PrismaZoom>
                     </div>
